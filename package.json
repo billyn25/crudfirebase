@@ -12,13 +12,21 @@
     "react-dom": "^16.12.0",
     "react-scripts": "3.3.0",
     "sweetalert2": "^9.5.3",
-    "dotenv": "^8.0.0"
+    "dotenv": "^8.0.0",
+    "npm": "^6.10.0",
+    "serve": "^11.2.0"
+  },
+  "engines": {
+    "node": "10.15.3",
+    "npm": "6.4.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -39,5 +47,6 @@
   "main": "index.js",
   "devDependencies": {},
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "gh-pages": "^2.1.1"
 }
