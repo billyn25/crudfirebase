@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import Formulario from "./Componentes/Formulario";
 import Usuarios from "./Componentes/Usuarios";
 import {ContextUsers} from './Context'
+import './main.css'
 
 function App() {
 
@@ -17,10 +18,10 @@ function App() {
             <div className="container2 mt-5">
                 <h2 className="text-center mb-4 text-secondary">Crud con Firebase y Reactjs</h2>
                 <div className="row">
-                    <div className="col">
+                    <div className="col col2">
                         <Formulario dataForEdit={usersEdit}/>
                     </div>
-                    <div className="col">
+                    <div className="col col2">
                         <Usuarios/>
                     </div>
                 </div>
